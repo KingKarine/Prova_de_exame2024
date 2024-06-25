@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b33111;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.visualization {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.vvisualization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.node {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #273172;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px; /* Espaço entre os círculos */
+    position: relative; /* Para posicionamento da seta */
+    content: '➔';
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Aumentar o tamanho da seta */
+    color: black;
+    margin-right: 10px; /* Espaço entre os círculos e a seta */
+    position: relative;
+    top: -12px; /* Ajustar a posição vertical da seta */
+}
+
+.arrow::before {
+    content: '➔';
+    left:500px;
+}
+.btn {
+    background-color: #96979c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b33111;
+}
